@@ -2,7 +2,9 @@
 import { ServiciosGrid } from "@/components/blocks/servicios-grid";
 import { Navbar } from "@/components/blocks/navbar";
 import { ProcesoGrid } from "@/components/blocks/proceso-grid";
+import { ProyectosGrid } from "@/components/blocks/proyectos-grid";
 import { TestimoniosGrid } from "@/components/blocks/testimonios-grid";
+import { StatsSection } from "@/components/blocks/stats-section";
 import { Footer } from "@/components/blocks/footer";
 import { CtaSection } from "@/components/blocks/cta-section";
 
@@ -13,8 +15,10 @@ export default function App() {
 
       <main className="pt-0 md:pt-20" id="inicio">
         <SlideshowDemo />
+        <StatsSection />
         <ServiciosGrid />
         <ProcesoGrid />
+        <ProyectosGrid />
         <TestimoniosGrid />
         <CtaSection />
       </main>

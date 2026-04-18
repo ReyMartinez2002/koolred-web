@@ -1,4 +1,4 @@
-import React from 'react';
+ï»¿import React from 'react';
 import { ShieldCheck, Award, Factory, Lock } from 'lucide-react';
 
 export function TestimoniosGrid() {
@@ -11,7 +11,7 @@ export function TestimoniosGrid() {
           <h2 className="text-sm font-bold text-red-500 tracking-widest uppercase mb-2">Respaldo Institucional</h2>
           <h3 className="text-3xl md:text-4xl font-extrabold text-white">Seguridad y Cumplimiento Normativo.</h3>
           <p className="mt-4 text-slate-400 max-w-2xl mx-auto text-lg">
-            No dejamos la continuidad de su negocio al azar. Cada proyecto es auditado, certificado y protegido por pólizas de cumplimiento real.
+            No dejamos la continuidad de su negocio al azar. Cada proyecto es auditado, certificado y protegido por plizas de cumplimiento real.
           </p>
         </div>
 
@@ -23,7 +23,7 @@ export function TestimoniosGrid() {
             </div>
             <h4 className="text-xl font-bold text-white mb-3">Norma NTC 2050 / RETIE</h4>
             <p className="text-slate-400 text-sm leading-relaxed">
-              Toda adecuación eléctrica, desde tableros hasta subestaciones, cumple estrictamente con el Reglamento Técnico de Instalaciones Eléctricas de Colombia.
+              Toda adecuacin elctrica, desde tableros hasta subestaciones, cumple estrictamente con el Reglamento Tcnico de Instalaciones Elctricas de Colombia.
             </p>
           </div>
 
@@ -31,9 +31,9 @@ export function TestimoniosGrid() {
             <div className="w-16 h-16 rounded-full bg-slate-800/80 flex items-center justify-center mb-6 text-red-500">
               <Award size={32} />
             </div>
-            <h4 className="text-xl font-bold text-white mb-3">Pólizas y Seguros</h4>
+            <h4 className="text-xl font-bold text-white mb-3">Plizas y Seguros</h4>
             <p className="text-slate-400 text-sm leading-relaxed">
-              Trabajamos con pólizas de Responsabilidad Civil Extracontractual (RCE), Cumplimiento y Calidad. Su inversión y activos están respaldados.
+              Trabajamos con plizas de Responsabilidad Civil Extracontractual (RCE), Cumplimiento y Calidad. Su inversin y activos estn respaldados.
             </p>
           </div>
 
@@ -43,7 +43,7 @@ export function TestimoniosGrid() {
             </div>
             <h4 className="text-xl font-bold text-white mb-3">Seguridad IT / OT</h4>
             <p className="text-slate-400 text-sm leading-relaxed">
-              En redes y CCTV, implementamos protocolos de encriptación y segregación de redes para proteger sus sistemas operativos de amenazas externas.
+              En redes y CCTV, implementamos protocolos de encriptacin y segregacin de redes para proteger sus sistemas operativos de amenazas externas.
             </p>
           </div>
 
@@ -51,7 +51,7 @@ export function TestimoniosGrid() {
 
         {/* Cintas de marcas / Partners (Opcional, demostrativo) */}
         <div className="mt-20 pt-10 border-t border-slate-800/50 text-center">
-          <p className="text-xs text-slate-500 uppercase tracking-widest font-semibold mb-8">Tecnologías y Estándares que utilizamos</p>
+          <p className="text-xs text-slate-500 uppercase tracking-widest font-semibold mb-8">Tecnologas y Estndares que utilizamos</p>
           <div className="flex flex-wrap justify-center items-center gap-8 md:gap-16 opacity-60 grayscale hover:grayscale-0 transition-all duration-500">
              <div className="text-xl font-bold text-slate-300 flex items-center gap-2"><Factory size={24}/> Schneider Electric</div>
              <div className="text-xl font-bold text-slate-300 flex items-center gap-2"><Factory size={24}/> n8n</div>
@@ -64,3 +64,7 @@ export function TestimoniosGrid() {
     </section>
   );
 }
+
+
+
+

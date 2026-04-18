@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import * as React from "react";
 import { MotionConfig } from "motion/react";
@@ -289,3 +289,7 @@ export function HoverSliderDemo() {
     </MotionConfig>
   );
 }
+
+
+
+

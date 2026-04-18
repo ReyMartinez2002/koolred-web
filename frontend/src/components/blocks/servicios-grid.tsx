@@ -3,38 +3,38 @@
 const servicios = [
   {
     id: "ia",
-    title: "Automatización Digital e IA (n8n)",
-    desc: "Orquestación de procesos, lectura de correos, clasificación de tickets y automatización de operaciones sin fricción.",
+    title: "Automatizacin Digital e IA (n8n)",
+    desc: "Orquestacin de procesos, lectura de correos, clasificacin de tickets y automatizacin de operaciones sin friccin.",
     tags: ["RPA", "n8n", "Inteligencia Artificial", "Flujos"]
   },
   {
     id: "energia",
-    title: "Adecuaciones Eléctricas",
+    title: "Adecuaciones Elctricas",
     desc: "Intervenciones en tableros, canalizaciones y puesta a tierra con estricto cumplimiento NTC 2050 y norma RETIE.",
-    tags: ["NTC 2050", "RETIE", "Tableros", "Tensión"]
+    tags: ["NTC 2050", "RETIE", "Tableros", "Tensin"]
   },
   {
     id: "hvac",
-    title: "Climatización HVAC / BMS",
-    desc: "Sistemas de ventilación, aire acondicionado y control centralizado para continuidad térmica y eficiencia energética.",
-    tags: ["BMS", "Termodinámica", "Control", "A/C"]
+    title: "Climatizacin HVAC / BMS",
+    desc: "Sistemas de ventilacin, aire acondicionado y control centralizado para continuidad trmica y eficiencia energtica.",
+    tags: ["BMS", "Termodinmica", "Control", "A/C"]
   },
   {
     id: "cctv",
-    title: "CCTV y Seguridad Electrónica",
-    desc: "Vigilancia perimetral, control de accesos y monitoreo avanzado con analítica de video y almacenamiento en nube.",
-    tags: ["Seguridad", "Biometría", "IP", "Monitoreo"]
+    title: "CCTV y Seguridad Electrnica",
+    desc: "Vigilancia perimetral, control de accesos y monitoreo avanzado con analtica de video y almacenamiento en nube.",
+    tags: ["Seguridad", "Biometra", "IP", "Monitoreo"]
   },
   {
     id: "redes",
     title: "Cableado Estructurado",
-    desc: "Diseño e instalación de redes de datos certificadas, fibra óptica y adecuación de data centers.",
-    tags: ["Fibra Óptica", "Data Center", "Certificación", "Redes"]
+    desc: "Diseño e instalacin de redes de datos certificadas, fibra ptica y adecuacin de data centers.",
+    tags: ["Fibra ptica", "Data Center", "Certificacin", "Redes"]
   },
   {
     id: "mantenimiento",
     title: "Soporte y Mantenimiento",
-    desc: "Planes preventivos y correctivos para infraestructura electromecánica, asegurando uptime y respaldo 24/7.",
+    desc: "Planes preventivos y correctivos para infraestructura electromecnica, asegurando uptime y respaldo 24/7.",
     tags: ["Uptime", "Preventivo", "Soporte", "SLA"]
   }
 ];
@@ -49,9 +49,9 @@ export function ServiciosGrid() {
       <div className="max-w-7xl mx-auto px-6 relative z-10">
         <div className="mb-16">
           <h2 className="text-sm font-bold text-red-500 tracking-widest uppercase mb-2">Nuestras Especialidades</h2>
-          <h3 className="text-4xl md:text-5xl font-extrabold text-white">Ingeniería que <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-red-800">impulsa</span> tu operación.</h3>
+          <h3 className="text-4xl md:text-5xl font-extrabold text-white">Ingeniera que <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-red-800">impulsa</span> tu operacin.</h3>
           <p className="mt-4 text-slate-400 max-w-2xl text-lg">
-            Desde la estabilización de energía y control climático, hasta la automatización de flujos con Inteligencia Artificial.
+            Desde la estabilizacin de energa y control climtico, hasta la automatizacin de flujos con Inteligencia Artificial.
           </p>
         </div>
 
@@ -77,3 +77,7 @@ export function ServiciosGrid() {
     </section>
   );
 }
+
+
+
+
