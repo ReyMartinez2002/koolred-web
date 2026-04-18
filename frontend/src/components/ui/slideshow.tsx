@@ -20,7 +20,7 @@ const SLIDES: Slide[] = [
     description:
       "Implementamos asistentes y flujos con IA que leen correos, clasifican informaci\u00f3n y generan acciones autom\u00e1ticas en segundos.",
     href: "ia-n8n.html",
-    videoSrc: "../assets/n8nai.mp4",
+    videoSrc: "/assets/n8nai.mp4",
   },
   {
     id: "adecuaciones",
@@ -29,7 +29,7 @@ const SLIDES: Slide[] = [
     description:
       "Intervenciones en tableros, canalizaciones y puesta a tierra con cumplimiento NTC 2050/RETIE.",
     href: "adecuaciones-electricas.html",
-    videoSrc: "../assets/Adecuaciones%20electricas%202.mp4",
+    videoSrc: "/assets/Adecuaciones%20electricas%202.mp4",
   },
   {
     id: "comunicaciones",
@@ -38,7 +38,7 @@ const SLIDES: Slide[] = [
     description:
       "Dise\u00f1o, instalaci\u00f3n y certificaci\u00f3n de cableado estructurado, redes y canalizaciones.",
     href: "cableado-estructurado.html",
-    videoSrc: "../assets/cableado%20estructurado%20.mp4",
+    videoSrc: "/assets/cableado%20estructurado%20.mp4",
   },
   {
     id: "cctv",
@@ -46,7 +46,7 @@ const SLIDES: Slide[] = [
     kicker: "Seguridad",
     description: "Instalaci\u00f3n, configuraci\u00f3n y soporte para vigilancia continua.",
     href: "cctv.html",
-    videoSrc: "../assets/CCTV.mp4",
+    videoSrc: "/assets/CCTV.mp4",
   },
   {
     id: "hvac",
@@ -55,7 +55,7 @@ const SLIDES: Slide[] = [
     description:
       "Diagn\u00f3stico, ajuste de control e integraci\u00f3n BMS para confort estable y eficiencia.",
     href: "hvac-bms.html",
-    videoSrc: "../assets/HVAC%20VIDEO.mp4",
+    videoSrc: "/assets/HVAC%20VIDEO.mp4",
   },
   {
     id: "automatizacion",
@@ -65,7 +65,7 @@ const SLIDES: Slide[] = [
       "Integraci\u00f3n PLC/HMI, datos y alarmas para estabilidad de procesos y mejora medible.",
     href: "automatizacion.html",
     videoSrc:
-      "../assets/Dise%C3%B1o%20el%C3%A9ctrico%20y%20automatizaci%C3%B3n%20profesional%20seg%C3%BAn%20norma%20RETIE%20%20NTC%20%C2%B7%20BMS%20%C2%B7%20Baja%20tensi%C3%B3n.mp4",
+      "/assets/Dise%C3%B1o%20el%C3%A9ctrico%20y%20automatizaci%C3%B3n%20profesional%20seg%C3%BAn%20norma%20RETIE%20%20NTC%20%C2%B7%20BMS%20%C2%B7%20Baja%20tensi%C3%B3n.mp4",
   },
   {
     id: "mantenimiento",
@@ -74,7 +74,7 @@ const SLIDES: Slide[] = [
     description:
       "Plan preventivo y correctivo con trazabilidad y soporte para activos cr\u00edticos.",
     href: "mantenimiento.html",
-    videoSrc: "../assets/MANTENIMIENTO.mp4",
+    videoSrc: "/assets/MANTENIMIENTO.mp4",
   },
   {
     id: "consultoria",
@@ -83,7 +83,7 @@ const SLIDES: Slide[] = [
     description:
       "Auditor\u00eda de ingenier\u00eda y control de cantidades con informes para consorcios.",
     href: "revision-tecnica.html",
-    videoSrc: "../assets/interventoria.mp4",
+    videoSrc: "/assets/interventoria.mp4",
   },
 ];
 
@@ -205,7 +205,7 @@ export default function Slideshow() {
       <div className="hero-frame relative h-[100dvh] min-h-[100vh] w-full overflow-hidden rounded-[28px] bg-[#0f1a40] shadow-[0_30px_90px_rgba(15,26,64,0.35)]">
         <div className="absolute left-3 top-3 z-20 flex h-11 w-11 items-center justify-center rounded-full border border-white/25 bg-white/70 opacity-80 shadow-[0_10px_24px_rgba(0,0,0,0.18)] backdrop-blur sm:left-5 sm:top-5 sm:h-14 sm:w-14">
           <img
-            src="../assets/11zon_cropped.png"
+            src="/assets/11zon_cropped.png"
             alt="KoolRed"
             className="h-7 w-7 object-contain sm:h-9 sm:w-9"
           />
