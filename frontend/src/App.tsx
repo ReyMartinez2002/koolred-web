@@ -1,12 +1,13 @@
 ﻿import { SlideshowDemo } from "@/components/blocks/slideshow-demo";
+import { StatsSection } from "@/components/blocks/stats-section";
 import { ServiciosGrid } from "@/components/blocks/servicios-grid";
 import { Navbar } from "@/components/blocks/navbar";
 import { ProcesoGrid } from "@/components/blocks/proceso-grid";
 import { ProyectosGrid } from "@/components/blocks/proyectos-grid";
 import { TestimoniosGrid } from "@/components/blocks/testimonios-grid";
-import { StatsSection } from "@/components/blocks/stats-section";
 import { Footer } from "@/components/blocks/footer";
 import { CtaSection } from "@/components/blocks/cta-section";
+import { WhatsappFloat } from "@/components/blocks/whatsapp-float";
 
 export default function App() {
   return (
@@ -24,6 +25,9 @@ export default function App() {
       </main>
 
       <Footer />
+      
+      {/* Botón Flotante Global */}
+      <WhatsappFloat />
     </div>
   );
 }
