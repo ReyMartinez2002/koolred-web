@@ -4,11 +4,11 @@ export function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="fixed top-0 w-full z-50 bg-slate-950/80 backdrop-blur-md border-b border-slate-800">
-      <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+    <nav className="fixed top-0 w-full z-50 bg-transparent border-b border-white/10">
+      <div className="max-w-7xl mx-auto px-6 h-24 flex items-center justify-between">
         <div className="flex items-center gap-3">
-          <img src="/assets/LOGO .png" alt="KoolRed Logo" className="h-10" onError={(e) => e.currentTarget.style.display='none'} />
-          <span className="text-xl font-bold tracking-tight text-white">KoolRed<span className="text-red-500">.</span></span>
+          <img src="/assets/LOGO .png" alt="KoolRed Logo" className="h-12 w-auto object-contain drop-shadow-[0_0_8px_rgba(255,255,255,0.3)] hover:scale-105 transition-transform" onError={(e) => e.currentTarget.style.display='none'} />
+          {/* Texto oculto, usando solo imagen */} <span className="sr-only">KoolRed</span>
         </div>
         
         {/* Desktop Menu */}
@@ -51,6 +51,10 @@ export function Navbar() {
     </nav>
   );
 }
+
+
+
+
 
 
 

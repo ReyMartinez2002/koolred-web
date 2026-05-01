@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import * as React from "react";
 import { cn } from "@/lib/utils";
@@ -202,14 +202,8 @@ export default function Slideshow() {
       onFocusCapture={() => setPaused(true)}
       onBlurCapture={() => setPaused(false)}
     >
-      <div className="hero-frame relative h-[100dvh] min-h-[100vh] w-full overflow-hidden rounded-[28px] bg-[#0f1a40] shadow-[0_30px_90px_rgba(15,26,64,0.35)]">
-        <div className="absolute left-3 top-3 z-20 flex h-11 w-11 items-center justify-center rounded-full border border-white/25 bg-white/70 opacity-80 shadow-[0_10px_24px_rgba(0,0,0,0.18)] backdrop-blur sm:left-5 sm:top-5 sm:h-14 sm:w-14">
-          <img
-            src="/assets/11zon_cropped.png"
-            alt="KoolRed"
-            className="h-7 w-7 object-contain sm:h-9 sm:w-9"
-          />
-        </div>
+      <div className="hero-frame relative h-[100dvh] w-full overflow-hidden bg-black">
+        
         {SLIDES.map((slide, index) => {
           const isActive = index === current;
           if (!visibleIndices.has(index)) return null;
@@ -226,9 +220,9 @@ export default function Slideshow() {
                 isActive={isActive}
                 label={slide.titleLines.join(" ")}
               />
-              <div className="absolute inset-0 bg-[radial-gradient(120%_120%_at_50%_25%,rgba(255,255,255,0.06)_0%,rgba(11,16,36,0.45)_55%,rgba(11,16,36,0.85)_100%),linear-gradient(to_top,rgba(11,16,36,0.65),rgba(11,16,36,0.25),transparent)]" />
-              <div className="absolute inset-0 flex items-end">
-                <div className="hero-content w-full p-4 sm:p-6 md:p-10">
+              <div className="absolute inset-0 bg-gradient-to-r from-slate-950 via-slate-950/70 to-transparent" />
+              <div className="absolute inset-0 flex items-end sm:items-center sm:pl-10">
+                <div className="hero-content w-full p-6 sm:p-12 md:p-20 lg:p-32">
                   <div
                     className={cn(
                       "max-w-full rounded-xl border border-[rgba(148,163,184,0.28)] bg-[#0b1024]/45 p-5 text-white shadow-[0_18px_40px_rgba(8,12,28,0.38)] backdrop-blur-sm transition-all duration-500 motion-reduce:transition-none sm:max-w-[520px] sm:rounded-2xl sm:p-6 lg:max-w-[720px]",
@@ -249,10 +243,10 @@ export default function Slideshow() {
                       {slide.description}
                     </p>
                     <div className="mt-6 flex flex-col gap-3 sm:flex-row sm:items-center">
-                      <a className="btn secondary w-full sm:w-auto" href={slide.href}>
+                      <a className="inline-flex items-center justify-center px-6 py-3 border border-white/20 bg-white/5 hover:bg-white/10 text-white rounded-full font-medium transition-all hover:scale-105 backdrop-blur w-full sm:w-auto" href={slide.href}>
                         {"Explorar soluci\u00f3n"}
                       </a>
-                          <a className="btn primary w-full sm:w-auto" href="https://wa.me/573154940908">
+                          <a className="inline-flex items-center justify-center px-6 py-3 bg-red-600 hover:bg-red-500 text-white rounded-full font-bold transition-all shadow-[0_0_20px_rgba(220,38,38,0.4)] hover:shadow-[0_0_30px_rgba(220,38,38,0.6)] hover:scale-105 w-full sm:w-auto gap-2" href="https://wa.me/573154940908">
                         {"Hablar con un ingeniero"}
                       </a>
                     </div>
@@ -267,7 +261,7 @@ export default function Slideshow() {
           type="button"
           onClick={prevSlide}
           aria-label="Anterior"
-          className="slider-arrow slider-arrow--prev group absolute left-3 bottom-5 flex h-10 w-10 items-center justify-center rounded-full border border-white/30 bg-white/12 text-[20px] font-semibold leading-none text-white/90 shadow-[0_12px_28px_rgba(8,12,28,0.32)] backdrop-blur transition-all duration-200 hover:scale-105 hover:bg-white/18 hover:shadow-[0_0_18px_rgba(148,163,184,0.35)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white/60 motion-reduce:transition-none sm:left-4 sm:bottom-6 sm:h-11 sm:w-11 sm:text-[22px] md:bottom-auto md:top-1/2 md:-translate-y-1/2"
+          className="slider-arrow slider-arrow--prev absolute left-6 top-1/2 -translate-y-1/2 flex h-12 w-12 items-center justify-center rounded-full border border-white/10 bg-white/5 text-white/50 backdrop-blur transition-all hover:bg-white/10 hover:text-white"
         >
           {"\u2039"}
         </button>
@@ -275,7 +269,7 @@ export default function Slideshow() {
           type="button"
           onClick={nextSlide}
           aria-label="Siguiente"
-          className="slider-arrow slider-arrow--next group absolute right-3 bottom-5 flex h-10 w-10 items-center justify-center rounded-full border border-white/30 bg-white/12 text-[20px] font-semibold leading-none text-white/90 shadow-[0_12px_28px_rgba(8,12,28,0.32)] backdrop-blur transition-all duration-200 hover:scale-105 hover:bg-white/18 hover:shadow-[0_0_18px_rgba(148,163,184,0.35)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white/60 motion-reduce:transition-none sm:right-4 sm:bottom-6 sm:h-11 sm:w-11 sm:text-[22px] md:bottom-auto md:top-1/2 md:-translate-y-1/2"
+          className="slider-arrow slider-arrow--next absolute right-6 top-1/2 -translate-y-1/2 flex h-12 w-12 items-center justify-center rounded-full border border-white/10 bg-white/5 text-white/50 backdrop-blur transition-all hover:bg-white/10 hover:text-white"
         >
           {"\u203a"}
         </button>
@@ -287,3 +281,9 @@ export default function Slideshow() {
     </section>
   );
 }
+
+
+
+
+
+
